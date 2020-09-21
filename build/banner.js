@@ -1,12 +1,12 @@
 'use strict'
 
-const pkg = require('../package.json')
+const PKG = require('../package.json')
 const year = new Date().getFullYear()
 
 function getBanner(pluginFilename) {
   return `/*!
-  * Bootstrap${pluginFilename ? ` ${pluginFilename}` : ''} v${pkg.version} (${pkg.homepage})
-  * Copyright 2011-${year} ${pkg.author}
+  * Bootstrap${pluginFilename ? ` ${pluginFilename}` : ''} v${PKG.version} (${PKG.homepage})
+  * Copyright 2011-${year} ${PKG.author}
   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
   */`
 }
